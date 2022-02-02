@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Aarco</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            
+            <h1 class="logo">AARC</h1>
+            <button class="btn-menu" onclick=openmenu()><i class='bx bx-menu-alt-left' ></i></button>
+            <nav class="nav-items">
+                
+
+                <button class="btn-close" onclick=closemenu() ><i class='bx bx-x' ></i></button>
+                <div class="links">
+                    <button class="nav-item" onclick=getInicio() >Inicio</button>
+                    <br><br><br>
+                    <button class="nav-item" onclick=getAbout() >Quienes somos</button>
+                </div>
+                
+                <div class="bot-nav">
+                    <button class="btn-contacto">Contáctanos</button>
+                    <br><br><br>
+                    <div class="social-media">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+        
+        <div class="content">
+            <!-- ---------------INICIO---------------- -->
+            <div class="section" id="inicio">
+                <div class="inicio">
+                    <div class="item-section">
+                        <h2>Autos</h2>
+                        <div class="info">
+                            <h3>PROTEGE:</h3>
+                            <p>Los daños o pérdida del automóvil y los daños o prejuicios causados a la propiedad ajena o a terceras personas con motivo del uso del automóvil.</p>
+                        </div>
+                        
+                        <img src="./img/auto.jpg" alt="" class="bg-section">
+                    </div>
+                    <div class="item-section">
+                        <h2>Gastos médicos mayores</h2>
+                        <div class="info">
+                            <h3>PROTEGE:</h3>
+                            <p>Los honorarios médicos, hospitalarios y demás que sean necesarios para la recuperación de la salud o vigor vital del asegurado, cuando se hayan afectado por causa de un accidente o enfermedad.</p>
+                        </div>
+                        <img src="./img/gastos.webp" alt="" class="bg-section">
+                    </div>
+                    <div class="item-section">
+                        <h2>Hogar</h2>
+                        <div class="info">
+                            <h3>PROTEGE:</h3>
+                            <p>A la vivienda y a sus habitantes contra daños que pudieran sufrir a causa de fenómenos naturales o robo, daños que pueda ocasionar una mascota, entre otras cosas.</p>
+                        </div>
+                        <img src="./img/hogar.jpeg" alt="" class="bg-section">
+                    </div>
+                    <div class="item-section">
+                        <h2>Vida</h2>
+                        <div class="info">
+                            <h3>PROTEGE:</h3>
+                            <p>Es un respaldo económico el cuál su función principal es indemnizar a los beneficiarios designados con una suma de dinero en caso del fallecimiento de la persona asegurada.</p>
+                        </div>
+                        <img src="./img/vida.jpeg" alt="" class="bg-section">
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------ABOUT---------------- -->
+            <div class="section" id="about">
+                <div class="about">
+                    <div class="header-about">
+                        <img src="./img/bg-about.jpg" class="bg-about" alt="">
+                        
+                        <div class="text-about">
+                            <h1 class="titleSection">¿Quiénes somos?</h1>
+                            <p>Alatorre Avedaño Recursos Corporativos, S.C. nace en 1986 como una sociedad promotora de seguros.</p>
+                            <p>En la búsqueda de diferentes alternativas de comercialización y con el fin de ampliar sus servicios se crea AARCO Agente de Seguros y de Finanzas, S.A. de C.V. que le permite actuar como corredor de seguros y de finanzas con las principales Instituciones del ramo establecidas en México.</p>
+                        </div>
+                    </div>
+
+                    <div class="bubbles">
+                        <div class="item-bubble">
+                            <img src="./img/mision.jpg" alt="">
+                            <h2>Mision</h2>
+                            <p>Atracción y desarrollo de personas</p>
+                        </div>
+                        <div class="item-bubble">
+                            <img src="./img/vision.png" alt="">
+                            <h2>Visión</h2>
+                            <p>Crecimiento</p>
+                        </div>
+                        <div class="item-bubble">
+                            <img src="./img/filosofia.jpg" alt="">
+                            <h2>Filosofía</h2>
+                            <p>Servicio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ---------------CONTACTO---------------- -->
+        <div class="contacto" id="contacto" >
+            <form action="" class="formulario">
+                <button type="button" class="close-contact"><i class='bx bx-x' ></i></button>
+                <h1>Contacto</h1>
+                <p>Llena el siguiente formulario y uno de nuestros asesores se pondrá en contacto contigo.</p>
+                <hr>
+                <div class="inputs">
+                    <label for="">Nombre:</label>
+                    <input type="text" required>
+                    <label for="">E-mail:</label>
+                    <input type="email" required>
+                    <label for="">Mensaje:</label>
+                    <textarea name="" id="" cols="10" rows="5"></textarea>
+                </div>
+                <button class="btn-enviar">Enviar</button>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
